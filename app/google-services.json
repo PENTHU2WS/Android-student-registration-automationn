@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "83989024618",
+    "project_id": "kayit-21ca1",
+    "storage_bucket": "kayit-21ca1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83989024618:android:0966c017d0bff832b55f13",
+        "android_client_info": {
+          "package_name": "com.example.projekopya2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtt6ZzzY7UTCcHy_q6NS6uEqtQoich8Wc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

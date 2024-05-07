@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+
+    tools:context=".kayit_ol">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+
+
+        android:src="@drawable/logow" />
+
+    <EditText
+        android:id="@+id/kayitUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_marginTop="31dp"
+        android:hint="Mail Adresiniz"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/okulNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kayitUser"
+        android:layout_marginTop="51dp"
+        android:hint="Okul No"
+        android:inputType="textPassword"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/AdinSoyadin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_marginTop="-17dp"
+        android:hint="Adın Soyadın"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/kayitPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kayitUser"
+        android:layout_marginTop="2dp"
+        android:hint="Şifre"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/sinif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kayitUser"
+        android:layout_marginTop="103dp"
+        android:hint="Sınıf"
+        android:inputType="textPassword"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kayitPassword"
+        android:layout_marginTop="163dp"
+        android:onClick="kayitOl"
+        android:text="Kayıt Ol" />
+
+    <TextView
+        android:id="@+id/registerTextView"
+        android:layout_width="215dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/forgotPasswordTextView"
+        android:layout_alignStart="@+id/loginButton"
+        android:layout_alignEnd="@+id/loginButton"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="80dp"
+        android:clickable="true"
+        android:onClick="onRegisterClick"
+        android:text="Hesabınız yok mu? Giriş yap"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/aciklama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kayitUser"
+        android:layout_marginTop="154dp"
+        android:hint="açıklama"
+        android:inputType="textPassword"
+        tools:ignore="Autofill" />
+
+    <TextView
+        android:id="@+id/forgotPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:clickable="true" />
+
+</RelativeLayout>

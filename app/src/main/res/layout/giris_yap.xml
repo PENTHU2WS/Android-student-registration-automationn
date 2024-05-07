@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+
+    tools:context=".giris">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="320dp"
+        android:layout_height="161dp"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/logow" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_marginTop="16dp"
+        android:hint="Kullanıcı Adı"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameEditText"
+        android:layout_marginTop="8dp"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="16dp"
+        android:onClick="girisYap"
+        android:text="Giriş Yap" />
+
+    <TextView
+        android:id="@+id/forgotPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/registerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgotPasswordTextView"
+        android:layout_marginTop="16dp"
+        android:text="Hesabınız yok mu? Kayıt Olun"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="onRegisterClick" />
+
+</RelativeLayout>

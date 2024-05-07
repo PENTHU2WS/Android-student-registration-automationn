@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/textViewUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kullanıcı Bilgileri"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewUser"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/kullanici"
+        app:layout_constraintTop_toBottomOf="@id/textViewUserName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewKullaniciAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kullanıcı Adı:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewUser"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewNO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewKullaniciAdi"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mail:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewNO"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewSifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Şifre:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewMail"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewSinif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sınıf:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewSifre"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewAciklama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Açıklama:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewSinif"
+        android:layout_marginTop="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
